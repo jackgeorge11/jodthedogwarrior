@@ -1,0 +1,42 @@
+// COLORS
+
+$white: #fff;
+$primary: #4f6263;
+
+// FONTS
+
+$font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+$font-family: "Roboto Condensed", sans-serif;
+
+$thin: 300;
+$thick: 700;
+
+$font-weights: (
+  thin: $thin,
+  thick: $thick,
+);
+
+$lg: 3rem;
+$md: 1.5rem;
+$sm: 1rem;
+$xsm: .875rem;
+
+$font-sizes: (
+  h1: $lg,
+  h2: $md,
+  h3: $sm,
+  p: $xsm,
+);
+
+// BORDERS
+
+$border: 1px solid $white;
+// $border: none;
+
+$desktop-min: 1100px;
+$mobile-max: 767px;
+$tablet-min: ($mobile-max + 1px);
+$tablet-max: ($desktop-min - 1px);
