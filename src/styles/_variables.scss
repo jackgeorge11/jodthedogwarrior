@@ -40,3 +40,10 @@ $desktop-min: 1100px;
 $mobile-max: 767px;
 $tablet-min: ($mobile-max + 1px);
 $tablet-max: ($desktop-min - 1px);
+
+// header stuff
+
+$header-logo-size: 5rem;
+$header-padding: 0.5rem;
+$header-padding-y: #{$header-padding * 2};
+$header-height: $header-logo-size + $header-padding;

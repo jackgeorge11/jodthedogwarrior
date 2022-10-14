@@ -1,9 +1,19 @@
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import "../styles/index.scss";
 
 const IndexPage = () => {
+  const [contact, setContact] = useState(false);
+  const [burger, setBurger] = useState(false);
+
+  const reveal = () => {
+    if (!contact) {
+      setContact(true);
+    }
+  };
+
   return (
     <main>
       <Helmet>
@@ -14,38 +24,78 @@ const IndexPage = () => {
         />
       </Helmet>
       <nav className="header">
-        <StaticImage
-          src="../images/logo-edited.png"
-          width={"5rem"}
-          height={"5rem"}
-          objectFit={"contain"}
-        ></StaticImage>
-        <h2 className="thick">
-          Jod the Dog Warrior{" "}
-          <h3>
-            (<i>j-OH-d</i> the dog warrior)
-          </h3>
-        </h2>
-        <div className="buttons">
-          <button className="instagram">
-            <a
-              href="https://www.instagram.com/jodthedogwarrior/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p>Instagram</p>
-            </a>
+        <div className="main-header">
+          <StaticImage
+            src="../images/logo-edited.png"
+            width={"5rem"}
+            height={"5rem"}
+            objectFit={"contain"}
+          ></StaticImage>
+          <h2 className="thick">
+            Jod the Dog Warrior{" "}
+            <h3>
+              (<i>j-OH-d</i> the dog warrior)
+            </h3>
+          </h2>
+          <div className="buttons">
+            <button className="top">
+              <Link to="#services">
+                <p>Services</p>
+              </Link>
+            </button>
+            <button onClick={reveal}>
+              <Link to="#contact">
+                <p>Contact</p>
+              </Link>
+            </button>
+            <button>
+              <Link to="#about">
+                <p>Jody's Story</p>
+              </Link>
+            </button>
+          </div>
+          <button
+            class={
+              burger
+                ? "hamburger hamburger--3dxy is-active"
+                : "hamburger hamburger--3dxy"
+            }
+            type="button"
+            onClick={() => setBurger((prev) => !prev)}
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
           </button>
-          <button className="contact">
-            <a href="mailto:jodthedogwarrior@gmail.com">
+        </div>
+        <div
+          className={burger ? "hamburger-menu is--active" : "hamburger-menu"}
+        >
+          <button className="top" onClick={() => setBurger(false)}>
+            <Link to="#services">
+              <p>Services</p>
+            </Link>
+          </button>
+          <button
+            onClick={() => {
+              reveal();
+              setBurger(false);
+            }}
+          >
+            <Link to="#contact">
               <p>Contact</p>
-            </a>
+            </Link>
+          </button>
+          <button>
+            <Link to="#about" onClick={() => setBurger(false)}>
+              <p>Jody's Story</p>
+            </Link>
           </button>
         </div>
       </nav>
 
       <div className="main-wrapper">
-        <article className="section">
+        <article className="section" id="contact">
           <div className="image">
             <StaticImage src="../images/walking-dogs.jpg" objectFit="cover" />
           </div>
@@ -57,10 +107,84 @@ const IndexPage = () => {
               Helping humans understand dog behavior and how it affects the
               relationship you have with them
             </h2>
+
+            {contact ? (
+              <div className="contacts">
+                <button className="contact">
+                  <a href="tel:+13108662453">
+                    <p>+1 (310) 482-9149</p>
+                  </a>
+                </button>
+                <button className="contact">
+                  <a href="mailto:jodthedogwarrior@gmail.com">
+                    <p>jodthedogwarrior@gmail.com</p>
+                  </a>
+                </button>
+              </div>
+            ) : (
+              <div className="ctas">
+                <button className="top">
+                  <Link to="#services">
+                    <p>View Services</p>
+                  </Link>
+                </button>
+                <button className="contact" onClick={reveal}>
+                  <p>Show Contact Info</p>
+                </button>
+              </div>
+            )}
           </div>
         </article>
 
-        <article className="section reverse">
+        <article className="section" id="services">
+          <div className="info full">
+            <div className="section-title">
+              <div className="line"></div>
+              <h1>Services</h1>
+              <div className="line"></div>
+            </div>
+            <h2 className="thick">How it works</h2>
+            <h2>
+              We will first schedule a 15 minute phone call so I can get a feel
+              for what your needs are and what you would like to work on with
+              your dog. This will help optimize our time together during the
+              in-person consultation.
+            </h2>
+            <h2 className="thick">
+              In-Person Consultation Session: (90 minutes $185)
+            </h2>
+            <h2>
+              The consultation will last approximately 90 minutes and will cover
+              an assessment at your home with you and your dog. If it is not
+              possible to meet at your home I will suggest another location that
+              is convenient. During the consultation we will go over your
+              routine with your dog including what areas you would like to focus
+              on and which of your dog's behaviors you would like to understand.
+              We will work on relationship-building skills and how to identify
+              habits that may be getting in the way of a balanced relationship
+              with your dog. I believe that building confidence is a key factor
+              in training and dog psychology. I will make suggestions consisting
+              of appropriate tools to use, which leash(es) would be best to
+              master your walks and any other information that would be helpful
+              so you will enjoy your training journey.
+            </h2>
+            <h2 className="thick">Follow up sessions: ($120/hour)</h2>
+            <h2>
+              These are additional, one hour, in-person, one-on-one training
+              sessions. I recommend booking the first follow up session for two
+              weeks after your in-person consultation, and as needed every two
+              weeks following, in order to maximize your training program.
+            </h2>
+            <h2 className="thick">Package of 4 sessions $420</h2>
+            <button className="cta" onClick={reveal}>
+              <Link to="#contact">
+                <p>Get in touch</p>
+              </Link>
+            </button>
+          </div>
+        </article>
+
+        <article className="section reverse" id="about">
           <div className="image">
             <div className="square">
               <StaticImage
@@ -82,6 +206,11 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="info">
+            <div className="section-title">
+              <div className="line"></div>
+              <h1>Jody's Story</h1>
+              <div className="line"></div>
+            </div>
             <h2>
               Jody’s love of all things dog began in early childhood with her
               first Old English Sheepdog, Charlie. Their bond was magical and
@@ -91,7 +220,7 @@ const IndexPage = () => {
             <h2>
               In 2006 Jody founded a full service dog walking ​and dog sitting
               company​ ,Dog Walker Extraordinaire (DWE). During this time, Jody​
-              personally cared for Countless dogs​,most of whom she helped train
+              personally cared for countless dogs​,most of whom she helped train
               and socialize. ​In this experience Jody discovered her passion for
               training​ and it became ​her focus and dream.
             </h2>
@@ -110,10 +239,38 @@ const IndexPage = () => {
               create a solid​, lasting bond for a happy life together.
             </h2>
             <h2>Jody is based in Los Angeles, California.</h2>
+            <div className="ctas">
+              <button className="cta">
+                <Link to="#services">
+                  <p>Learn more</p>
+                </Link>
+              </button>
+              <button className="cta" onClick={reveal}>
+                <Link to="#contact">
+                  <p>Get in touch</p>
+                </Link>
+              </button>
+            </div>
           </div>
         </article>
       </div>
-      <StaticImage class="footer-logo" src="../images/logo.png" />
+      <StaticImage class="footer-logo" src="../images/logo-edited.png" />
+      <div className="socials">
+        <a
+          href="https://www.instagram.com/jodthedogwarrior/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <StaticImage src="../images/instagram.png" />
+        </a>
+        <a
+          href="https://www.facebook.com/jodthedogwarrior/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <StaticImage src="../images/facebook.png" />
+        </a>
+      </div>
     </main>
   );
 };

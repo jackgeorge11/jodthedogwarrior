@@ -22,3 +22,19 @@
     @content;
   }
 }
+
+@mixin section-offset {
+  padding: calc($header-height + 2rem) 0 1rem;
+  margin-top: -#{$header-height};
+
+  @include mobile {
+    padding: $header-height 0 1rem;
+  }
+}
+
+@mixin scale-transition {
+  transition: all 0.25s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
