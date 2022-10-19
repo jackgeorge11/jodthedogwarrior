@@ -219,16 +219,40 @@ const IndexPage = () => {
             </h2>
             <h2>
               In 2006 Jody founded a full service dog walking ​and dog sitting
-              company​ ,Dog Walker Extraordinaire (DWE). During this time, Jody​
-              personally cared for countless dogs​,most of whom she helped train
-              and socialize. ​In this experience Jody discovered her passion for
-              training​ and it became ​her focus and dream.
+              company​, Dog Walker Extraordinaire (DWE). During this time, Jody​
+              personally cared for countless dogs​, most of whom she helped
+              train and socialize. ​In this experience Jody discovered her
+              passion for training​ and it became ​her focus and dream.
             </h2>
             <h2>
-              When Jody met esteemed dog behaviorist /​trainer Cheri Lucas​ ​it
-              was time to formally begin her training journey . She attended
-              workshops and also mentored under ​behaviorist/​trainer Betsy
-              Gunter​, and dedicated time and study to strengthen her knowledge.
+              Jody began her formal training journey when she met esteemed dog
+              behaviorist{" "}
+              <a
+                href="https://cheriwulfflucas.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cheri Lucas
+              </a>{" "}
+              and mentored under behaviorist/trainer{" "}
+              <a
+                href="https://www.betzk9.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Betsey Gunter
+              </a>
+              . She then attended several workshops including one with{" "}
+              <a
+                href="https://www.ortails.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Oregon Tails
+              </a>
+              , where she learned the valuable "Jentle Method”, a form of energy
+              work. Jody has dedicated countless hours to continuous studying
+              and learning in order to strengthen her knowledge.
             </h2>
             <h2>
               Every dog is unique and has their own innate qualities. Jody is
@@ -238,7 +262,10 @@ const IndexPage = () => {
               healthy foundation between human and canine​. This in turn will
               create a solid​, lasting bond for a happy life together.
             </h2>
-            <h2>Jody is based in Los Angeles, California.</h2>
+            <h2>
+              Jody is based in Los Angeles, California. In her free time, Jody
+              volunteers with local animal rescue organizations.
+            </h2>
             <div className="ctas">
               <button className="cta">
                 <Link to="#services">
@@ -251,6 +278,45 @@ const IndexPage = () => {
                 </Link>
               </button>
             </div>
+          </div>
+        </article>
+        <article className="section" id="testimonials">
+          <div className="info">
+            <div className="section-title">
+              <div className="line"></div>
+              <h1>Testimonials</h1>
+              <div className="line"></div>
+            </div>
+            <h2 className="italic">
+              Jody’s work with our pup was nothing short of magic. She helped us
+              to establish a clear and solid relationship with our growing
+              puppy, and, helped us to deflect unwanted behavior before it gets
+              out of hand. Within 20 minutes of meeting our pup, Jody had earned
+              her trust and respect, and, had established an amazing
+              relationship of true leadership with her. We learned a ton by
+              watching Jody interact with our pup. Her method is simple and easy
+              to implement.
+            </h2>
+            <h3>Anna T, Marina Del Rey</h3>
+
+            <h2>
+              Best investment ever. After using conventional “trick for treat”
+              training techniques with our Doodle I realized quickly that I was
+              not making the kind of progress I was hoping to see. After just
+              one session with Jody, I could already tell the difference. All it
+              took was an explanation of her behaviors and how to create a
+              different type of relationship with my dog. I would highly
+              recommend Jody. She knows her stuff.
+            </h2>
+            <h3>Oliver T, Los Angeles</h3>
+            <h2 className="italic">
+              With Jody’s training I am finally able to walk my 80 lb. dog
+              without him pulling me. She showed me how to use the proper leash
+              and how to actually lead and not be led by my dog. Instead of
+              jumping at the door before our walk, he waits patiently. Jody was
+              clear, concise and compassionate.
+            </h2>
+            <h3>Shelly K, Mar Vista</h3>
           </div>
         </article>
       </div>
