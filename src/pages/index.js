@@ -99,7 +99,7 @@ const IndexPage = () => {
           <div className="image">
             <StaticImage src="../images/walking-dogs.jpg" objectFit="cover" />
           </div>
-          <div className="info small-quote">
+          <div className="info">
             <h1>
               <i>Dogs speak, but only to those who know how to listen.</i>
             </h1>
@@ -287,36 +287,51 @@ const IndexPage = () => {
               <h1>Testimonials</h1>
               <div className="line"></div>
             </div>
-            <h2 className="italic">
-              Jody’s work with our pup was nothing short of magic. She helped us
-              to establish a clear and solid relationship with our growing
-              puppy, and, helped us to deflect unwanted behavior before it gets
-              out of hand. Within 20 minutes of meeting our pup, Jody had earned
-              her trust and respect, and, had established an amazing
-              relationship of true leadership with her. We learned a ton by
-              watching Jody interact with our pup. Her method is simple and easy
-              to implement.
-            </h2>
-            <h3>Anna T, Marina Del Rey</h3>
+            <div className="testimonial">
+              <StaticImage src="../images/gayle.jpg" objectFit="cover" />
+              <div className="words">
+                <h2 className="italic">
+                  Jody is an intuitive trainer. She showed me how to properly
+                  walk my mini Aussie Shepherd that I was struggling with daily
+                  while he pulled and lunged on our walks making it impossible
+                  for me to walk him. Now he is on the proper lead. He is in
+                  such a better state of mind while on walks and I have so much
+                  more control. I am a lot less stressed now and so is he! Morty
+                  and I love Jody and her way of training and explaining from a
+                  dogs perspective. <span>~ Gayle S, Los Angeles</span>
+                </h2>
+              </div>
+            </div>
+            <div className="testimonial">
+              <StaticImage src="../images/anna.jpeg" />
+              <div className="words">
+                <h2 className="italic">
+                  Jody’s work with our pup was nothing short of magic. She
+                  helped us to establish a clear and solid relationship with our
+                  growing puppy, and, helped us to deflect unwanted behavior
+                  before it gets out of hand. Within 20 minutes of meeting our
+                  pup, Jody had earned her trust and respect, and, had
+                  established an amazing relationship of true leadership with
+                  her. We learned a ton by watching Jody interact with our pup.
+                  Her method is simple and easy to implement.{" "}
+                  <span>~ Anna T, Marina Del Rey</span>
+                </h2>
+              </div>
+            </div>
 
-            <h2>
-              Best investment ever. After using conventional “trick for treat”
-              training techniques with our Doodle I realized quickly that I was
-              not making the kind of progress I was hoping to see. After just
-              one session with Jody, I could already tell the difference. All it
-              took was an explanation of her behaviors and how to create a
-              different type of relationship with my dog. I would highly
-              recommend Jody. She knows her stuff.
-            </h2>
-            <h3>Oliver T, Los Angeles</h3>
-            <h2 className="italic">
-              With Jody’s training I am finally able to walk my 80 lb. dog
-              without him pulling me. She showed me how to use the proper leash
-              and how to actually lead and not be led by my dog. Instead of
-              jumping at the door before our walk, he waits patiently. Jody was
-              clear, concise and compassionate.
-            </h2>
-            <h3>Shelly K, Mar Vista</h3>
+            <div className="testimonial">
+              <StaticImage src="../images/shelly.jpeg" />
+              <div className="words">
+                <h2 className="italic">
+                  With Jody’s training I am finally able to walk my 80 lb. dog
+                  without him pulling me. She showed me how to use the proper
+                  leash and how to actually lead and not be led by my dog.
+                  Instead of jumping at the door before our walk, he waits
+                  patiently. Jody was clear, concise and compassionate.{" "}
+                  <span>~ Shelly K, Mar Vista</span>
+                </h2>
+              </div>
+            </div>
           </div>
         </article>
       </div>

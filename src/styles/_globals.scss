@@ -42,7 +42,7 @@ main {
 
 .header {
   width: 100%;
-  padding: 0.5rem 0;
+  padding: $gmd 0;
   border-bottom: $border;
   position: sticky;
   top: 0;
@@ -60,7 +60,7 @@ main {
   }
 
   h2 {
-    margin: 0 auto 0 1rem;
+    margin: 0 auto 0 $glg;
     text-transform: uppercase;
     font-weight: 400;
   }
@@ -78,7 +78,7 @@ main {
     }
 
     button {
-      margin-left: 1rem;
+      margin-left: $glg;
     }
   }
 
@@ -102,11 +102,11 @@ main {
 
     &.is--active {
       max-height: 5rem;
-      padding: 1rem 0;
+      padding: $gmd 0;
     }
 
     button {
-      margin-right: 1rem;
+      margin-right: $glg;
     }
   }
 }
@@ -140,10 +140,7 @@ button {
   @include mobile {
     flex-direction: column-reverse;
     height: auto !important;
-
-    div {
-      margin: 1rem 0;
-    }
+    margin-bottom: $glg;
   }
 
   .contacts {
@@ -167,7 +164,7 @@ button {
       height: auto;
       padding: 0;
       border: none;
-      margin-bottom: 0;
+      margin: $glg 0 0;
     }
 
     .square {
@@ -211,12 +208,12 @@ button {
     }
 
     h1 {
-      margin: 0 0 1rem;
+      margin: 0 0 $glg;
       font-weight: 400;
     }
 
     h2 {
-      margin: 0.75rem 0;
+      margin: 0 0 $glg;
 
       a {
         color: $white;
@@ -231,13 +228,14 @@ button {
     }
 
     .cta {
-      margin-top: 2rem;
+      margin-top: $glg * 2;
     }
 
     .section-title {
       display: flex;
       align-items: center;
       width: 100%;
+      margin-bottom: $glg;
 
       .line {
         border-top: $border;
@@ -247,7 +245,7 @@ button {
       }
 
       h1 {
-        margin: 0 1rem;
+        margin: 0 $glg;
       }
     }
 
@@ -303,13 +301,40 @@ button {
     .info {
       padding: 0;
       width: 100%;
+      @include flex($fd: column);
+      .testimonial {
+        margin-bottom: $glg;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 60rem;
 
-      h2 {
-        margin-bottom: 0.5rem;
-      }
+        .gatsby-image-wrapper {
+          border-radius: 50%;
+          min-width: 5rem;
+          width: 5rem;
+          min-height: 5rem;
+          height: 5rem;
+          margin: 0;
+          float: left;
+          @include flex;
+          margin: 0 0.5rem 0 0;
+          margin-bottom: $gmd;
+          max-width: 10rem;
+          width: 10rem;
+          max-height: 10rem;
+          height: 10rem;
+        }
 
-      h3 {
-        margin-bottom: 0.5rem;
+        h2 {
+          margin: 0;
+          text-align: center;
+
+          span {
+            font-style: normal;
+            font-weight: $thick;
+          }
+        }
       }
     }
   }
