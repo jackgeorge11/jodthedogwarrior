@@ -156,17 +156,18 @@ const IndexPage = () => {
             <h2>
               The consultation will last approximately 90 minutes and will cover
               an assessment at your home with you and your dog. If it is not
-              possible to meet at your home I will suggest another location that
-              is convenient. During the consultation we will go over your
+              possible to meet at your home, I will suggest another location
+              that is convenient. During the consultation, we will go over your
               routine with your dog including what areas you would like to focus
               on and which of your dog's behaviors you would like to understand.
-              We will work on relationship-building skills and how to identify
-              habits that may be getting in the way of a balanced relationship
-              with your dog. I believe that building confidence is a key factor
-              in training and dog psychology. I will make suggestions consisting
-              of appropriate tools to use, which leash(es) would be best to
-              master your walks and any other information that would be helpful
-              so you will enjoy your training journey.
+              In addition, we will work on relationship-building skills and how
+              to identify habits that may be getting in the way of a balanced
+              relationship with your dog. I believe that building confidence is
+              a key factor in training and dog psychology. I will make
+              suggestions consisting of appropriate tools to use, which
+              leash(es) would be best to master your walks and any other
+              information that would be helpful so you will enjoy your training
+              journey.
             </h2>
             <h2 className="thick">Follow up sessions: ($120/hour)</h2>
             <h2>
@@ -221,7 +222,7 @@ const IndexPage = () => {
               In 2006 Jody founded a full service dog walking ​and dog sitting
               company​, Dog Walker Extraordinaire (DWE). During this time, Jody​
               personally cared for countless dogs​, most of whom she helped
-              train and socialize. ​In this experience Jody discovered her
+              train and socialize. ​In this experience, Jody discovered her
               passion for training​ and it became ​her focus and dream.
             </h2>
             <h2>
