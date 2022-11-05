@@ -111,7 +111,7 @@ const IndexPage = () => {
             {contact ? (
               <div className="contacts">
                 <button className="contact">
-                  <a href="tel:+13108662453">
+                  <a href="tel:+13104829149">
                     <p>+1 (310) 482-9149</p>
                   </a>
                 </button>
