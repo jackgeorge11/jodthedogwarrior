@@ -151,7 +151,7 @@ const IndexPage = () => {
               in-person consultation.
             </h2>
             <h2 className="thick">
-              In-Person Consultation Session: (90 minutes $185)
+              In-Person Consultation Session: (90 minutes $200)
             </h2>
             <h2>
               The consultation will last approximately 90 minutes and will cover
@@ -169,14 +169,14 @@ const IndexPage = () => {
               information that would be helpful so you will enjoy your training
               journey.
             </h2>
-            <h2 className="thick">Follow up sessions: ($120/hour)</h2>
+            <h2 className="thick">Follow up sessions: ($150/hour)</h2>
             <h2>
               These are additional, one hour, in-person, one-on-one training
               sessions. I recommend booking the first follow up session for two
               weeks after your in-person consultation, and as needed every two
               weeks following, in order to maximize your training program.
             </h2>
-            <h2 className="thick">Package of 4 sessions $420</h2>
+            <h2 className="thick">Package of 4 sessions $500</h2>
             <button className="cta" onClick={reveal}>
               <Link to="#contact">
                 <p>Get in touch</p>
