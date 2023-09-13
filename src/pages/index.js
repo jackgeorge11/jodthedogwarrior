@@ -97,7 +97,7 @@ const IndexPage = () => {
       <div className="main-wrapper">
         <article className="section" id="contact">
           <div className="image">
-            <StaticImage src="../images/walking-dogs.jpg" objectFit="cover" />
+            <StaticImage src="../images/main.jpeg" objectFit="cover" alt="" />
           </div>
           <div className="info">
             <h1>
@@ -176,7 +176,7 @@ const IndexPage = () => {
               weeks after your in-person consultation, and as needed every two
               weeks following, in order to maximize your training program.
             </h2>
-            <h2 className="thick">Package of 4 sessions $500</h2>
+            <h2 className="thick">Package of 4 sessions $550</h2>
             <button className="cta" onClick={reveal}>
               <Link to="#contact">
                 <p>Get in touch</p>
